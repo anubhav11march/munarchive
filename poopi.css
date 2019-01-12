@@ -1,0 +1,138 @@
+a.dum {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  font-family: Century Gothic;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0 0 10px 0;
+  color: #465879;
+}
+
+a.dum:hover, a.dum:active {
+color: 456468;
+}
+
+a.dum:after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+  background-color: #045FB4;
+  -webkit-transition: all .1s ease;
+  transition: all 0.3s ease;  
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+a.dum:hover:after {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+a.bham {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0 0 10px 0;
+  color: #045FB4;
+}
+
+a.bham:after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  visibility: visible;
+  background-color: #045FB4;
+
+}
+
+a.bham:hover:after {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* --- Container configuration ---------------------------------------------------------- */
+.viewport {
+ border-radius:150px; 
+    float: left;
+    height: 250px;
+    margin: 0 9px 9px 0;
+    overflow: hidden;
+    position: relative;
+    width: 250px;
+}
+
+
+.no-margin {
+    margin-right: 0;
+}
+
+/* --- Link configuration that contains the image and label ----------------------------- */
+.viewport a {
+    display: block;
+    position: relative;
+}
+
+.viewport a img {
+    height: 240px;
+    left: 0px;
+    position: relative;
+    top: 0px;
+    width: 240px;
+border-radius:110px; 
+}
+
+/* --- Label configuration -------------------------------------------------------------- */
+.viewport a span {
+    display: none;
+    font-size: 2.4em;
+    height: 100%;
+    padding-top: 114px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    z-index: 100;
+}
+    .viewport a span em {
+        display: block;
+        font-size: 0.5em;
+        font-weight: normal;
+    }
+
+/* --- Dark hover background ------------------------------------------------------------ */
+.dark-background {
+    background-color: rgba(15, 15, 15, 0.6);
+    color: #fff;
+    text-shadow: #000 0px 0px 20px;
+}
+    .dark-background em {
+        color: #ccc;
+    }
+
+
+.grid {
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 300px;
+	list-style: none;
+	text-align: center;
+	border-radius: 15px; 
+}

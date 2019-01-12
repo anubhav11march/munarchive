@@ -1,0 +1,480 @@
+<html>
+<head>
+<title>Why Us? | MUN Archive - Earn as you shop</title>
+<style>
+.toshika {
+background: rgba(255,255,255,0.5);
+}
+
+.akshat {
+border-radius: 25px;
+}
+
+a.fi {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  font-family: Century Gothic;
+  font-size: 16px;
+  padding: 0 0 10px 0;
+  color: orange;
+}
+
+a.fi:hover, a.dum:active {
+color: Green;
+}
+
+a.fi:after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+  background-color: green;
+  -webkit-transition: all .1s ease;
+  transition: all 0.3s ease;  
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+a.fi:hover:after {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+a.fee {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 0 0 10px 0;
+  color: green;
+}
+
+a.fee:after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  visibility: visible;
+  background-color: green;
+
+}
+
+a.fee:hover:after {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/* --- Container configuration ---------------------------------------------------------- */
+.viewport {
+ border-radius:10px; 
+    float: left;
+    height: 250px;
+    margin: 0 9px 9px 0;
+    overflow: hidden;
+    position: relative;
+    width: 250px;
+}
+
+
+.no-margin {
+    margin-right: 0;
+}
+
+/* --- Link configuration that contains the image and label ----------------------------- */
+.viewport a {
+    display: block;
+    position: relative;
+}
+
+.viewport a img {
+    height: 240px;
+    left: 0px;
+    position: relative;
+    top: 0px;
+    width: 240px;
+border-radius:110px; 
+}
+
+/* --- Label configuration -------------------------------------------------------------- */
+.viewport a span {
+    display: none;
+    font-size: 2.4em;
+    height: 100%;
+    padding-top: 114px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    z-index: 100;
+}
+    .viewport a span em {
+        display: block;
+        font-size: 0.5em;
+        font-weight: normal;
+    }
+
+/* --- Dark hover background ------------------------------------------------------------ */
+.dark-background {
+    background-color: rgba(15, 15, 15, 0.6);
+    color: #fff;
+    text-shadow: #000 0px 0px 20px;
+}
+    .dark-background em {
+        color: #ccc;
+    }
+
+.gridi {
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+	border-radius: 15px; 
+}
+
+/* Common style */
+.gridi figure {
+	position: relative;
+	float: right;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 400px;
+	max-width: 500px;
+	max-height: 400px;
+	width: 48%;
+	height: auto;
+	background: #465496;
+	text-align: left;
+	cursor: pointer;
+	border-radius: 15px; 
+}
+
+.gridi figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.gridi figure figcaption {
+	padding: 0.5em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.gridi figure figcaption::before,
+.gridi figure figcaption::after {
+	pointer-events: none;
+}
+
+.gridi figure figcaption,
+.gridi figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.grid {
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+	border-radius: 15px; 
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 400px;
+	max-width: 500px;
+	max-height: 400px;
+	width: 48%;
+	height: auto;
+	background: #465496;
+	text-align: left;
+	cursor: pointer;
+	border-radius: 15px; 
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 0.5em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 78.5%;
+}
+
+figure.effect-goliath {
+	background: #454684;
+}
+
+figure.effect-goliath img,
+figure.effect-goliath h2 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-goliath img {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure.effect-goliath h2,
+figure.effect-goliath p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 30px;
+}
+
+figure.effect-goliath p {
+	text-transform: none;
+	font-size: 90%;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,50px,0);
+	transform: translate3d(0,50px,0);
+}
+
+figure.effect-goliath:hover img {
+	-webkit-transform: translate3d(0,-80px,0);
+	transform: translate3d(0,-80px,0);
+}
+
+figure.effect-goliath:hover h2 {
+	-webkit-transform: translate3d(0,-100px,0);
+	transform: translate3d(0,-100px,0);
+}
+
+figure.effect-goliath:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.content {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+.content > h2 {
+	clear: both;
+	margin: 0;
+	padding: 4em 1% 0;
+	color: #465489;
+	font-weight: 800;
+	font-size: 1.5em;
+}
+
+.content > h2:first-child {
+	padding-top: 0em;
+}
+
+</style>
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('.viewport').mouseenter(function(e) {
+        $(this).children('a').children('img').animate({ height: '250', left: '0', top: '0', width: '250'}, 100);
+        $(this).children('a').children('span').fadeIn(200);
+    }).mouseleave(function(e) {
+        $(this).children('a').children('img').animate({ height: '250', left: '0', top: '0', width: '250'}, 100);
+        $(this).children('a').children('span').fadeOut(200);
+    });
+});
+</script></head>
+<body width=100% style="padding:0px; margin:0px; ">
+<table width=100% style="position:fixed; ">
+<table width=100% height=100% background="bg2.jpg" padding=0px position=absolute style="background-padding:0px; ">
+<tr>
+<td valign=top>
+<table width=100% height=200px class=toshika align=center>
+<tr>
+<td align=center>
+<table background=transparent width=50% align=left>
+<tr>
+<td align=right><img src=logo.png width=160px height=150px hspace=10>
+<td align=left><font face="Century Gothic" color= black size=6>MUN Archive<br></font><font face="Century Gothic" color= black size=4>Earn as you shop</font>
+</tr></table>
+<td align=center><table background=transparent width=50% align=right>
+<tr>
+<td align=left><a href="https://www.facebook.com/cafreaktmch"><img src=fb.jpg width=30px height=30px style="border-radius:7px;"></a>
+<td align=left><a href="#"><img src=t.jpg width=30px height=30px style="border-radius:7px;"></a>
+<td align=left><a href="#"><img src=g.jpg width=30px height=30px style="border-radius:7px;"></a>
+</tr></table>
+</tr>
+</table>
+<table height=50px bgcolor=black class=akshat width=60% align=center>
+<tr>
+<td align=center><a class=fi href="index.html">Home</a>
+<td align=center><a class=fee href="ourworks.html">Our Works</a>
+<td align=center><a class=fi href="whyus.html">Why us?</a>
+<td align=center><a class=fi href="reachus.html">Reach Us</a>
+</tr>
+</table>
+<table width=60% height=50% align=center>
+<tr><td></tr>
+<tr>
+<td align=center>
+<font size=6.5 color=white face="MS Sans Serif"><b>Good Design is Good Business.</b></font><p align=right><font size=4 color=white face="Lithos pro">-Thomas Watson Junior</font>
+</tr></table></tr></table>
+<table height=900px width=100% style="width:fixed; " bgcolor=#764664>
+<tr align=center>
+<td align=center><a href="http://msad.in/"><div class="grid">
+					<figure class="effect-goliath">
+						<img src="web2.png" alt="img23"/ style="border-radius: 10px; ">
+						<figcaption>
+							<h2></h2>
+							<p>Mind Skills Academy<br><span>msad.in</span></p>
+							
+						</figcaption>			
+					</figure></a>
+
+<td align=center><p align=center><font color=white face="Century Gothic" size=6>Mind Skills Academy<br></font>
+</tr>
+<tr align=center>
+
+<td align=center><a href="http://arihantreclamationpvtltd.com/index.html"><div class="grid">
+					<figure class="effect-goliath" align=center>
+						<img src="web1.png" alt="img23"/ style="border-radius: 10px; ">
+						<figcaption>
+							<h2></h2>
+							<p>Arihant Reclamation Pvt. Ltd.<br><span>arihantreclamationpvtltd.com</span></p>
+							
+						</figcaption>			
+					</figure></a>
+<td align=center><p align=center><font color=white face="Century Gothic" size=6>Arihant Reclamation Pvt. Ltd.<br></font>
+</tr>
+<tr>
+<td align=center><p align=center><font color=white face="Century Gothic" size=6>Arihant Textile<br></font>
+<td align=center><a href="http://arihanttextile.in/"><div class="gridi">
+					<figure class="effect-goliath">
+						<img src="web3.png" alt="img23"/ style="border-radius: 10px; ">
+						<figcaption>
+							<h2></h2>
+							<p>Arihant Textile<br><span>arihanttextile.in</span></p>
+							
+						</figcaption>			
+					</figure></a>
+</tr>
+<tr align=center>
+<td align=center><p align=center><font color=white face="Century Gothic" size=6>SPS MUN 2015<br></font>
+<td align=center><a href="http://www.munarchive.com/sps.html"><div class="gridi">
+					<figure class="effect-goliath">
+						<img src="web4.png" alt="img23"/ style="border-radius: 10px; ">
+						<figcaption>
+							<h2></h2>
+							<p>SPS MUN 2015<br><span>spsmun.com</span></p>
+							
+						</figcaption>			
+					</figure></a>
+</tr>
+<tr>
+</table>
+<table height=200px width=100% bgcolor=#FBF5EF>
+<tr>
+<td align=center><table width=70%><tr><td><font color=#585858 size=4 face="Century Gothic">Munarchive.com is affiliated with many leading e-commerce websites. If you plan to buy anything from these sites, buy it thrugh our site by following these steps:<br>
+<img src=s1.png><br>
+1. Visit munarchive.com<br>
+<img src=next.png><br>
+<img src=s2.png><br>
+2. Click on the respective icon of the the website.
+<img src=next.png><br>
+<img src=s3.png><br>
+3. Order your desired product.
+<img src=next.png><br>
+<img src=s4.png><br>
+4. Notify us about your order through email or call - 8860732624
+<br><br>
+
+Now, sit back to receive your order and the mentioned cashback delivered to you within a week of purchase.
+ </font>
+</tr></table></tr></table>
+<table width=100% height=90px bgcolor=#748545><tr><td align=left><img src=21.png height=40px width=40px><font color=#F2F2F2 size=4 face="Century Gothic"> - +91-8860732624
+<td align=left><img src=22.png height=50px width=50px><font color=#F2F2F2 size=4 face="Century Gothic"> - customers@munarchive.com
+<td align=right valign=bottom><font color=#F2F2F3 size=4 face="Century Gothic">All Rights Reserved.  &copy;  MUN Archive 2016
+</tr></table>
+</body></html>
+
+
+
+ 
